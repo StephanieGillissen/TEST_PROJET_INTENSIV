@@ -1,7 +1,7 @@
 // ./src/scss/stephalizeCss/index.scss
+// DISPATCHER DU FRAMEWORK
 
 @import 'variables';
-
-body {
-    background: $couleur;
-}
+@import 'modules/typography';
+@import 'modules/grid';
+@import 'modules/init';
