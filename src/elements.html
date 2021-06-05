@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,12 @@
     <title>Test Projet Intensiv' - Elements</title>
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
-<body class="container">
-    <header>
+<body class="backgroundDark container grid">
+    <header class="siteHeader"><!-- Titre principale -->
         <h1 class="h1">Intensiv'</h1>
-        <nav>
+        <input type="checkbox" id="hamburgerCheckbox" />
+        <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
+        <nav class="backgroundMenu mainNav"><!-- Menu de navigation et réseaux sociaux -->
             <ul>
                 <li>
                     <a href="index.html">THIS IS INTENSIV'</a>
@@ -19,7 +21,7 @@
                     <a href="post.html">GENERIC PAGE</a>
                 </li>
                 <li>
-                    <a href="elements.html">ELEMENTS REFERENCE</a>
+                    <a href="elements.html" class="isActive">ELEMENTS REFERENCE</a>
                 </li>
             </ul>
             <ul>
@@ -46,22 +48,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2 class="h1">Elements reference</h2>
+    <main class="backgroundLight container grid">                              <!-- Page Elements -->
+        <h2 class="h1">Elements reference</h2>                 <!-- Titre de la page -->
         <section>
-            <h2 class="h2">COLORS</h2>
+            <h2 class="h2">COLORS</h2>                             <!-- COULEURS -->
             <div class="div1">#18BFEF</div>
             <div class="div2">#F6F6F6</div>
             <div class="div3">#717981</div>
             <div class="div4">#4E403D</div>
             <div class="div5">#212931</div>
-            <hr />
+            <hr />                                                   <!-- TEXTE -->
             <h2 class="h2">TEXT -<span class="h6">"MERRIWEATHER", GEORGIA, SERIF |#212931</span></h2>
             <p>
                 This is <b>bold</b> and this is  <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. 
                 This is <span class="underline">underlined</span> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.
             </p>
-            <hr />
+            <hr />                                                  <!-- TITRES -->
             <h2 class="h2">HEADERS -<span class="h6">"SOURCE SANS PRO", HELVETICA, SANS-SERIF |#212931</span></h2>
             <div>            
                 <h2 class="h1">HEADING LEVEL 1</h2> 
@@ -71,7 +73,7 @@
                 <h5 class="h5">HEADING LEVEL 5</h5>
                 <h6 class="h6">HEADING LEVEL 6</h6>
             </div>
-            <hr />
+            <hr />                                          <!-- ENTÊTE AVEC SOUS-TITRE -->
             <h2 class="h2">HEADING WITH A SUBTITLE</h2>
             <div class="sub-title">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
             <p>
@@ -88,7 +90,7 @@
                 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
             </p>  
             <hr />
-            <h2 class="h2">LISTS</h2>
+            <h2 class="h2">LISTS</h2>                               <!-- LISTES -->
             <div>
                 <h3 class="h3">UNODERED - UL</h3>
                 <ul>
@@ -222,28 +224,6 @@
             <div>
                 <input type="button" value="SMALL" /> <input type="button" value="SMALL" />
             </div>
-            <h3>DEFINITION</h3>
-            <ul>
-                <li>Item 1
-                    <p>Praesent ut ligula non mi varius sagittis. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
-                       Quisque malesuada placerat nisl. Phasellus accumsan cursus velit. Aliquam lobortis. Nam at tortor in tellus interdum sagittis.</p>
-                </li>
-                <li>Item 2
-                    <p>Praesent ut ligula non mi varius sagittis. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
-                       Quisque malesuada placerat nisl. Phasellus accumsan cursus velit. Aliquam lobortis. Nam at tortor in tellus interdum sagittis.</p>
-                </li>
-                <li>Item 3
-                    <p>Praesent ut ligula non mi varius sagittis. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. 
-                       Quisque malesuada placerat nisl. Phasellus accumsan cursus velit. Aliquam lobortis. Nam at tortor in tellus interdum sagittis.</p>
-                </li>
-            </ul>
-            <h3>ACTIONS</h3>
-            <div>
-                <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
-            </div>
-            <div>
-                <input type="button" value="SMALL" /> <input type="button" value="SMALL" />
-            </div>
             <div>
                 <input type="button" value="DEFAULT" />
                 <input type="button" value="DEFAULT" />
@@ -257,7 +237,7 @@
             <input type="button" value="SMALL" />
             <input type="button" value="SMALL" />
             <hr />
-            <h2>BLOCKQUOTE</h2>
+            <h2>BLOCKQUOTE</h2>                                   <!-- CITATION EN BLOC -->
             <blockquote>
                 Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Suspendisse non nisl 
                 sit amet velit hendrerit rutrum. Pellentesque egestas, neque sit amet convallis pulvinar, 
@@ -265,7 +245,7 @@
                 Fusce vel dui. Phasellus dolor. Maecenas malesuada. Curabitur at lacus ac velit ornare lobortis.
             </blockquote>
             <hr />
-            <h2>TABLE</h2>
+            <h2>TABLE</h2>                                           <!-- TABLEAU -->
             <h3>DEFAULT</h3>
             <table>
                 <thead>
@@ -354,7 +334,7 @@
                     </tr>
                 </tfoot>
             </table>
-            <hr />
+            <hr />                                              <!-- BOUTONS -->
             <h2>BUTTONS</h2>
             <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
             <input type="button" value="LARGE" /> <input type="button" value="DEFAULT" /> <input type="button" value="SMALL" />
@@ -364,29 +344,43 @@
             <button type="submit"><img src="./assets/download-solid.svg" alt="téléchargement"> ICON</button>
             <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
             <hr />
-            <h2>FORM</h2>
-            <form action="" method="post" enctype="multipart/form-data">
-                <input type="text" name="name" id="name" placeholder="Name" />
-                <input type="email" name="email" id="email" placeholder="Email" />
-                <select name="category" id="category">
-                    <option disabled="disabled" selected="selected">- Category -</option>
-                    <option value="c1">category 1</option>
-                    <option value="c2">category 2</option>
-                    <option value="c3">category 3</option>
-                </select>
-                <input type="radio" name="speed" value="l" checked="checked" />Low
-                <input type="radio" name="speed" value="n" />Normal
-                <input type="radio" name="speed" value="h" />High
-                <input type="checkbox" name="copy" id="copy">
-                <label for="copy" >Email me a copy</label>
-                <input type="checkbox" name="captcha" id="captcha" checked="checked">
-                <label for="captcha" >I am a human</label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <h2>FORM</h2>                                        <!-- FORMULAIRE -->
+            <form action="traitement.html" method="post" enctype="multipart/form-data">
+                <div>
+                    <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email" />
+                </div>
+                <div>
+                    <select name="category" id="category">
+                        <option disabled="disabled" selected="selected">- Category -</option>
+                        <option value="c1">category 1</option>
+                        <option value="c2">category 2</option>
+                        <option value="c3">category 3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" name="speed" value="l" checked="checked" />Low
+                    <input type="radio" name="speed" value="n" />Normal
+                    <input type="radio" name="speed" value="h" />High
+                </div>
+                <div>
+                    <input type="checkbox" name="copy" id="copy">
+                    <label for="copy" >Email me a copy</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="captcha" id="captcha" checked="checked">
+                    <label for="captcha" >I am a human</label>    
+                </div>
+                <div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
                 <input type="submit" value="SEND MESSAGE" />
                 <input type="reset" value="RESET" />
             </form>
             <hr />
-            <h2>IMAGES</h2>
+            <h2>IMAGES</h2>                                     <!-- IMAGES -->
             <h3>FIT</h3>
                 <img src="#" alt="image 1">
                 <img src="#" alt="image 2">
@@ -399,6 +393,7 @@
                 <img src="#" alt="image 9">
                 <img src="#" alt="image 10">
             <article>
+                <h3>LEFT & RIGHT</h3>
                 <figure>
                     <img src="#" alt="figure 1" />
                     <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Etiam imperdiet imperdiet orci. Cras risus ipsum, faucibus ut, 
@@ -417,7 +412,7 @@
                 </figure>
             </article>
             <hr />
-            <h2>BOX</h2>
+            <h2>BOX</h2>                                        <!-- BOÎTES -->
             <div>
                 Morbi nec metus. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Pellentesque auctor 
                 neque nec urna. Nullam sagittis. Suspendisse potenti. Donec posuere vulputate arcu. Donec id justo.. Suspendisse enim turpis, dictum sed, 
@@ -431,8 +426,8 @@
                 libero. Fusce commodo aliquam arcu.
             </div>
             <hr />
-            <h2>PREFORMATTED</h2>
-            <pre>
+            <h2>PREFORMATTED</h2>                                   <!-- PRÉFORMATÉ -->
+            <pre class="backgroundMedium">
                 i = 0;
 
                 while (!deck.isInOrder()) {
@@ -444,19 +439,24 @@
                 print 'It took ' + i + ' iterations to sort the deck.';
             </pre>
         </section>
-        <footer>
-            <form action="" method="post">
-                <label for="name">NAME</label>
-                <input type="text" name="name" id="name" />
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-                <label for="message">MESSAGE</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <footer class="backgroundMedium">                                                     <!-- CONTACT -->
+            <form action="traitement.html" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
                 <input type="submit" value="SEND MESSAGE" />
             </form>
             <address>
                 <ul>
-                    <li></li>
                     <li>PHONE <a href="tel:0000000000">(000) 000 - 0000</a></li>
                     <li>EMAIL <a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
                     <li>SOCIAL
@@ -489,7 +489,7 @@
     </main>
     <footer>
         <div>
-            &copy UNTITLED | DESIGN: <a href="https://www.promotion-sociale.be/" target="_blank">IEPS</a>
+            &copy;UNTITLED | DESIGN: <a href="https://www.promotion-sociale.be/" target="_blank">IEPS</a>
         </div>
     </footer>
     
