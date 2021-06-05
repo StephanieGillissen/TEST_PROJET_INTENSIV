@@ -360,12 +360,12 @@
             <input type="button" value="LARGE" /> <input type="button" value="DEFAULT" /> <input type="button" value="SMALL" />
             <input type="button" value="FIT" /> <input type="button" value="FIT" />
             <input type="button" value="FIT + SMALL" /> <input type="button" value="FIT + SMALL" />
-            <button type="submit"><img src="./assets/img/search-solid.svg" alt="recherche"> ICON</button>
-            <button type="submit"><img src="./assets/img/download-solid.svg" alt="téléchargement"> ICON</button>
+            <button type="submit"><img src="./assets/search-solid.svg" alt="recherche"> ICON</button>
+            <button type="submit"><img src="./assets/download-solid.svg" alt="téléchargement"> ICON</button>
             <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
             <hr />
             <h2>FORM</h2>
-            <form action="traitement.php" method="POST">
+            <form action="" method="post" enctype="multipart/form-data">
                 <input type="text" name="name" id="name" placeholder="Name" />
                 <input type="email" name="email" id="email" placeholder="Email" />
                 <select name="category" id="category">
@@ -381,23 +381,23 @@
                 <label for="copy" >Email me a copy</label>
                 <input type="checkbox" name="captcha" id="captcha" checked="checked">
                 <label for="captcha" >I am a human</label>
-                <textarea name="message" id="" cols="30" rows="10"placeholder="Enter your message"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
                 <input type="submit" value="SEND MESSAGE" />
                 <input type="reset" value="RESET" />
             </form>
             <hr />
             <h2>IMAGES</h2>
             <h3>FIT</h3>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="#" alt="image 1">
+                <img src="#" alt="image 2">
+                <img src="#" alt="image 3">
+                <img src="#" alt="image 4">
+                <img src="#" alt="image 5">
+                <img src="#" alt="image 6">
+                <img src="#" alt="image 7">
+                <img src="#" alt="image 8">
+                <img src="#" alt="image 9">
+                <img src="#" alt="image 10">
             <article>
                 <figure>
                     <img src="#" alt="figure 1" />
@@ -445,8 +445,14 @@
             </pre>
         </section>
         <footer>
-            <form action="">
-
+            <form action="" method="post">
+                <label for="name">NAME</label>
+                <input type="text" name="name" id="name" />
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" />
+                <label for="message">MESSAGE</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="SEND MESSAGE" />
             </form>
             <address>
                 <ul>
