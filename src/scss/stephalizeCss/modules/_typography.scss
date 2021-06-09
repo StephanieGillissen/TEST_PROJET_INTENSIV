@@ -66,8 +66,7 @@
         line-height: $line-height-default;
         color: $font-color-default;
     }
-
-
+   
     h1, .h1 {
         font-family: $font-2;
         color: $font-color-h1;
@@ -77,30 +76,51 @@
         margin: $margin-h1;
         letter-spacing: $letter-spacing-h1;
     }
-    h1, .h1 {
+    h2, .h2 {
         font-family: $font-2;
-        color: $font-color-h1;
-        font-size: $font-size-h1;
-        font-weight: $font-weight-h1;
-        line-height: $line-height-h1;
+        color: $font-color-h2;
+        font-size: $font-size-h2;
+        font-weight: $font-weight-h2;
+        line-height: $line-height-h2;
         margin: $margin-h1;
-        letter-spacing: $letter-spacing-h1;
+        letter-spacing: $letter-spacing-h2;
     }
-    h1, .h1 {
+    h3, .h3 {
         font-family: $font-2;
-        color: $font-color-h1;
-        font-size: $font-size-h1;
-        font-weight: $font-weight-h1;
-        line-height: $line-height-h1;
-        margin: $margin-h1;
-        letter-spacing: $letter-spacing-h1;
+        color: $font-color-h3;
+        font-size: $font-size-h3;
+        font-weight: $font-weight-h3;
+        line-height: $line-height-h3;
+        margin: $margin-h3;
+        letter-spacing: $letter-spacing-h3;
     }
-    h1, .h1 {
+    h4, .h4 {
         font-family: $font-2;
-        color: $font-color-h1;
-        font-size: $font-size-h1;
-        font-weight: $font-weight-h1;
-        line-height: $line-height-h1;
-        margin: $margin-h1;
-        letter-spacing: $letter-spacing-h1;
+        color: $font-color-h4;
+        font-size: $font-size-h4;
+        font-weight: $font-weight-h4;
+        line-height: $line-height-h4;
+        margin: $margin-h4;
+        letter-spacing: $letter-spacing-h4;
     }
+    h5, .h5 {
+        font-family: $font-2;
+        color: $font-color-h5;
+        font-size: $font-size-h5;
+        font-weight: $font-weight-h5;
+        line-height: $line-height-h5;
+        margin: $margin-h5;
+        letter-spacing: $letter-spacing-h5;
+    }
+    h6, .h6 {
+        font-family: $font-2;
+        color: $font-color-h6;
+        font-size: $font-size-h6;
+        font-weight: $font-weight-h6;
+        line-height: $line-height-h6;
+        margin: $margin-h6;
+        letter-spacing: $letter-spacing-h6;
+    }
+    
+    
+   
