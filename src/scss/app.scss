@@ -65,10 +65,14 @@
 
         .siteHeader {
             padding-top: 2rem;
+            
             .title1 {
+                font-family: $font-2;
                 color: $color-neutral-1;
                 border: $color-neutral-1 5px solid;
-                
+                padding: 5px;
+                width: 200px;
+                text-indent: 10px;
             }
             .mainNav {
                 display: none;
@@ -98,7 +102,7 @@
 
 // ----------------- MAIN CONTENT ---------------------
 
-
+    
 
 // ----------------- MAIN FOOTER ---------------------
 
@@ -107,5 +111,5 @@
 // ----------------- FOOTER ---------------------
 
     .siteFooter {
-        word-spacing: 1rem;
+        margin: 100px;
     }

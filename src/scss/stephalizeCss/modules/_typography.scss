@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
 // ---------- FONTS VARIABLES ----------------------
 
@@ -79,7 +79,15 @@
         $hr-color: $color-neutral-3;
         $hr-margin: 3rem 0;
 
+    
+    // ___________ ICONS ___________________
+
+        $icons-hover-color: $color-1;
+        $icons-border-radius: $border-radius-default;
+
+    
     // ___________ BLOCKQUOTE ___________________
+
 
 
 
@@ -93,7 +101,7 @@
         color: $font-color-default;
     }
 
-    // LINKS
+    // LINKS__________________
     a {
         color: $link-color;
         text-decoration: $link-decoration;
@@ -104,7 +112,7 @@
 
     }
 
-    // HR
+    // HR______________________
     hr {
         height: $hr-height;
         background: $hr-color;
@@ -112,7 +120,7 @@
         margin: $hr-margin;
     }
 
-    // CODE
+    // CODE_______________________
     code {
         color: $code-color;
         background: $code-background;
@@ -121,9 +129,17 @@
         border-bottom: $code-border-radius;
     }
 
-    // BLOCKQUOTE
+    // ICONS_______________________
+    li {
+        list-style: none;
+        a:hover {
+            color: $icons-hover-color;
+        }
+    }
+
+    // BLOCKQUOTE__________________
    
-    // HEADERS
+    // HEADERS_______________________
     h1, .h1 {
         font-family: $font-2;
         color: $font-color-h1;
@@ -179,11 +195,15 @@
         letter-spacing: $letter-spacing-h6;
     }
     
-    // FOOTER
+    
+    // FOOTER_____________________
     footer {
         font-family: $font-2;
         color: $color-neutral-3;
         font-size: $font-size-h6;
+        span {
+            word-spacing: 1rem;
+        }
         a {
             color: $color-neutral-3;
             text-decoration: $link-decoration;
