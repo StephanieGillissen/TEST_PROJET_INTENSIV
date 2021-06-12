@@ -5,15 +5,15 @@
 
     // _____________ PARAGRAPHS _______________
 
-        $font-1: 'Merriweather', serif;
+        $font-1: 'Merriweather', georgia, serif;
         $font-color-default: $color-text;
         $font-size-default: 1.1em;
         $font-weight-default: 300;
         $line-height-default: 1.65;
 
-    // _____________ TITLES _______________
+    // _____________ HEADERS _______________
 
-        $font-2: 'Source Sans Pro', sans-serif;
+        $font-2: 'Source Sans Pro', Helvetica, sans-serif;
 
         $font-color-h1: $color-text;
         $font-size-h1: 2.5rem;
@@ -57,6 +57,32 @@
         $margin-h6: 0 0 0 .7rem 0;
         $letter-spacing-h6: -.025rem;
 
+    // _______________ LINKS __________________
+
+        $link-color: $color-text;
+        $link-decoration:underline dotted;
+
+        $link-hover-color: $color-text;
+        $link-hover-decoration: none;
+    
+    // __________ CODE ________________________
+
+        $code-color: $color-neutral-3;
+        $code-background: $color-neutral-2;
+        $code-padding: .3em;
+        $code-border: $color-neutral-3 1px solid;
+        $code-border-radius: $border-radius-default;
+
+    // ______________ HR _______________________
+
+        $hr-height: 1px;
+        $hr-color: $color-neutral-3;
+        $hr-margin: 3rem 0;
+
+    // ___________ BLOCKQUOTE ___________________
+
+
+
 // ---------- DEFAULT SPECIFICATIONS ---------------------
 
     body {
@@ -66,7 +92,38 @@
         line-height: $line-height-default;
         color: $font-color-default;
     }
+
+    // LINKS
+    a {
+        color: $link-color;
+        text-decoration: $link-decoration;
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: $link-hover-decoration;
+        }
+
+    }
+
+    // HR
+    hr {
+        height: $hr-height;
+        background: $hr-color;
+        border: none;
+        margin: $hr-margin;
+    }
+
+    // CODE
+    code {
+        color: $code-color;
+        background: $code-background;
+        padding: $code-padding;
+        border: $code-border;
+        border-bottom: $code-border-radius;
+    }
+
+    // BLOCKQUOTE
    
+    // HEADERS
     h1, .h1 {
         font-family: $font-2;
         color: $font-color-h1;
@@ -122,5 +179,19 @@
         letter-spacing: $letter-spacing-h6;
     }
     
+    // FOOTER
+    footer {
+        font-family: $font-1;
+        color: $color-neutral-3;
+        font-size: $font-size-h6;
+        a {
+            color: $color-neutral-3;
+            text-decoration: $link-decoration;
+            &:hover {
+                color: $color-neutral-2;
+                text-decoration: $link-hover-decoration;
+            }
     
+        }
+    }
    

@@ -1,16 +1,15 @@
 @import './stephalizeCss/index.scss';
-// @import './../lib/fontawesome/scss/fontawesome.scss';
-// @import './../lib/fontawesome/scss/brands.scss';
-// @import './../lib/fontawesome/scss/solid.scss';
-// @import './../lib/fontawesome/scss/regular.scss';
-// @import './../lib/fontawesome/scss/v4-shims.scss';
+@import './../lib/fontawesome/scss/fontawesome.scss';
+@import './../lib/fontawesome/scss/brands.scss';
+@import './../lib/fontawesome/scss/solid.scss';
+@import './../lib/fontawesome/scss/regular.scss';
+
 
 
 
 
 
 // ---------------- HELPERS ------------------
-
 
 .backgroundLight {
     background: $color-neutral-1;
@@ -29,71 +28,69 @@
     color: $color-text;
 }
 
-// |||||||| MENU HAMBURGER |||||||||
 
-#hamburgerLabel {
-    display: block;
-    font-size: 4rem;
-    &::before {
-        content: '\f0c9';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-    }
-    &:hover {
-        cursor: pointer;
-    }
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-    
-}
-#hamburgerCheckbox {
-    display: none;
-    &:checked {
-        ~ nav {
+// ------------ HEADER ----------------------
+    // _____________ MENU HAMBURGER _____________
+
+        #hamburgerLabel {
             display: block;
-        }
-        + #hamburgerLabel::before {
-            content: '\f00d';
-        }
-    }
-}
-
-
-// ----------------- HEADER ---------------------
-
-.siteHeader {
-    text-align: center;
-    padding-top: 2rem;
-            .linkLogo {
-                max-width: 100%;
-                max-height: 100px;
+            font-size: 4rem;
+            &::before {
+                content: '\f0c9';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
             }
-    .mainNav {
-        display: none;
-        @media screen and (min-width: 768px) {
-            display: block;
+            &:hover {
+                cursor: pointer;
+            }
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+            
         }
-            .menuListItem {
-                @media screen and (min-width: 768px) {
-                    display: inline-block;   
-                }
-                .menuItemLink {
+        #hamburgerCheckbox {
+            display: none;
+            &:checked {
+                ~ nav {
                     display: block;
-                    padding: 2rem;
+                }
+                + #hamburgerLabel::before {
+                    content: '\f00d';
                 }
             }
         }
+
+
+    // _____________ HEADER _____________
+
+        .siteHeader {
+            text-align: center;
+            padding-top: 2rem;
+            .mainNav {
+                display: none;
+                @media screen and (min-width: 768px) {
+                    display: block;
+                }
+                .listItem {
+                    @media screen and (min-width: 768px) {
+                    display: inline-block;   
+                    }
+                    .itemLink {
+                        display: block;
+                        padding: 2rem;
+                        }
+                    }
+                }
+            }
+
+
+
+
+// ----------------- MAIN HEADER ---------------------
+
+    .mainHeader {
+        padding: 2em;
     }
-
-
-
-
-// ----------------- HERO ---------------------
-
-.hero {
-    padding: 2em;
-}
 
 // ----------------- MAIN CONTENT ---------------------
 
@@ -104,3 +101,8 @@
 
 
 // ----------------- FOOTER ---------------------
+
+    footer {
+        text-align: center;
+
+    }
