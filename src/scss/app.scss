@@ -30,14 +30,7 @@
 .dInline {
     display: inline-block;
 }
-.iconsBorder {
-    padding: 5px;
-    border: $icons-border;
-    border-radius: $icons-border-radius;
-    &:hover {
-        color: $hover-color;
-    }
-}
+
 
 // ------------ HEADER ----------------------
     // _____________ MENU HAMBURGER _____________

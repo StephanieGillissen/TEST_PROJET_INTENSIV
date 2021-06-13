@@ -84,6 +84,7 @@
 
         $icons-border: $color-neutral-3 1px solid;
         $icons-border-radius: $border-radius-specify;
+        $icons-background: $color-neutral-2;
 
     
     // ___________ BLOCKQUOTE ___________________
@@ -140,6 +141,16 @@
         a:hover {
                 color: $hover-color;
             }        
+    }
+    .iconsBorder {
+        margin-left: 5px;
+        padding: 4px 8px;
+        border: $icons-border;
+        border-radius: $icons-border-radius;
+        &:hover {
+            color: $hover-color;
+            border: $hover-color;
+        }
     }
 
     // BLOCKQUOTE__________________
