@@ -8,14 +8,106 @@
     <link rel="stylesheet" href="./scss/stephalizeCss/index.scss">
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
-<body>
-    <h1>Test Projet Intensiv'</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="elements.html">Elements</a></li>
-        </ul>
-    </nav>
+<body class="backgroundDark container grid">
+    <header class="siteHeader text-center"><!-- Titre principale -->
+        <h1 class="title1 text-center">INTENSIV'</h1>
+        <input type="checkbox" id="hamburgerCheckbox" />
+        <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
+        <nav class="backgroundMenu mainNav"><!-- Menu de navigation et réseaux sociaux -->
+            <ul>
+                <li>
+                    <a href="index.html" class="isActive">THIS IS INTENSIV'</a>
+                </li>
+                <li>
+                    <a href="post.html">GENERIC PAGE</a>
+                </li>
+                <li>
+                    <a href="elements.html">ELEMENTS REFERENCE</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="listItem">
+                    <a href="#" class="linkLogo">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="listItem">
+                    <a href="#" class="linkLogo">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="listItem">
+                    <a href="#" class="linkLogo">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="listItem">
+                    <a href="#" class="linkLogo">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainHeader backgroundLight container grid">                              <!-- Page Elements -->
+        <h2 class="text-center h1">Elements reference</h2>                 <!-- Titre de la page -->
+        <section>
+            <h2 class="h2">mettre les articles ici</h2> 
+        </section>
+        <footer class="backgroundMedium">                                                     <!-- CONTACT -->
+            <form action="traitement.html" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="SEND MESSAGE" />
+            </form>
+            <address>
+                <ul>
+                    <li>PHONE <a href="tel:0000000000">(000) 000 - 0000</a></li>
+                    <li>EMAIL <a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
+                    <li>SOCIAL
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </address>
+        </footer>
+    </main>
+    <footer class="siteFooter text-center">
+        <div>
+            &copy; <span>UNTITLED | DESIGN:</span> <a href="https://www.promotion-sociale.be/" target="_blank">IEPS</a>
+        </div>
+    </footer>
+    
     <script src="./js/app.js"></script>
 </body>
 </html>

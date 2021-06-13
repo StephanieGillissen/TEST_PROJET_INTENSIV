@@ -82,14 +82,16 @@
     
     // ___________ ICONS ___________________
 
-        $icons-hover-color: $color-1;
-        $icons-border-radius: $border-radius-default;
+        $icons-border: $color-neutral-3 1px solid;
+        $icons-border-radius: $border-radius-specify;
 
     
     // ___________ BLOCKQUOTE ___________________
 
 
+    // ___________ BUTTON __________________________
 
+        $hover-color: $color-1;
 
 // ---------- DEFAULT SPECIFICATIONS ---------------------
 
@@ -130,11 +132,14 @@
     }
 
     // ICONS_______________________
+    
     li {
         list-style: none;
+        display: inline-block;
+
         a:hover {
-            color: $icons-hover-color;
-        }
+                color: $hover-color;
+            }        
     }
 
     // BLOCKQUOTE__________________
@@ -204,14 +209,16 @@
         span {
             word-spacing: 1rem;
         }
+        li {
+            display: block;
+        }
         a {
             color: $color-neutral-3;
             text-decoration: $link-decoration;
             &:hover {
-                color: $color-neutral-2;
+                color: $hover-color;
                 text-decoration: $link-hover-decoration;
-            }
-    
+            }    
         }
     }
    
