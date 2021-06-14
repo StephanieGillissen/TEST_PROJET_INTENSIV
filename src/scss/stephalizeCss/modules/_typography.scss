@@ -57,6 +57,10 @@
         $margin-h6: 0 0 0 .7rem 0;
         $letter-spacing-h6: -.025rem;
 
+    // __________ SUBTITLES __________________
+       
+        $font-italic: italic;
+
     // _______________ LINKS __________________
 
         $link-color: $color-text;
@@ -89,6 +93,7 @@
     
     // ___________ BLOCKQUOTE ___________________
 
+        $line-height-blockquote: 2.5;
 
     // ___________ BUTTON __________________________
 
@@ -137,9 +142,22 @@
         border: $code-border;
     }
 
+
+    // LISTS______________________
+    ul, ol {
+        padding: 20px;
+        
+    }
+    li {
+        padding-left: .5rem;
+    }
+
+
+
+
     // ICONS_______________________
     .iconsBorder {
-        margin-left: 5px;
+        padding: 0;
         width: 30px;
         height: 30px;
         text-align: center;
@@ -152,15 +170,25 @@
         }
     }
     .iconsLight {
-        margin-left: 5px;
+        padding: 0;
         width: 30px;
         height: 30px;
         text-align: center;
         padding-top: 4px;
+        &:hover {
+            color: $hover-color;
+        }
     }
     
 
     // BLOCKQUOTE__________________
+    blockquote {
+        font-style: $font-italic;
+        border-left: lighten($color-neutral-3, 40%) 4px solid;
+        margin: 18px 0;
+        padding-left: 40px;
+        line-height: $line-height-blockquote;
+    }
 
     // PERFORMATTED________________
     pre {
@@ -225,16 +253,18 @@
         margin: $margin-h6;
         letter-spacing: $letter-spacing-h6;
     }
+
+    // SUBTITLES__________________________
     .sub-title1 {
-        font-style: italic;
+        font-style: $font-italic;
         font-size: $font-size-h3;
     }
     .sub-title2 {
-        font-style: italic;
+        font-style: $font-italic;
         font-size: $font-size-h4;
     }
     .sub-title3 {
-        font-style: italic;
+        font-style: $font-italic;
         font-size: $font-size-h5;
     }
 
