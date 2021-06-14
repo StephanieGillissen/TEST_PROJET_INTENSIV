@@ -7,41 +7,41 @@
     <title>Test Projet Intensiv' - Elements</title>
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
-<body class="backgroundDark container grid">
+<body class="container grid">
     <header class="siteHeader text-center"><!-- Titre principale -->
         <h1 class="title1 text-center">INTENSIV'</h1>
         <input type="checkbox" id="hamburgerCheckbox" />
         <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
         <nav class="backgroundMenu mainNav"><!-- Menu de navigation et réseaux sociaux -->
-            <ul>
-                <li>
+            <ul class="menuList">
+                <li class="listItem">
                     <a href="index.html">THIS IS INTENSIV'</a>
                 </li>
-                <li>
+                <li class="listItem">
                     <a href="post.html">GENERIC PAGE</a>
                 </li>
-                <li>
+                <li class="listItem">
                     <a href="elements.html" class="isActive">ELEMENTS REFERENCE</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="menuList">
                 <li class="listItem">
-                    <a href="#" class="linkLogo">
+                    <a href="#" class="itemLink">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li class="listItem">
-                    <a href="#" class="linkLogo">
+                    <a href="#">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li class="listItem">
-                    <a href="#" class="linkLogo">
+                    <a href="#">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li class="listItem">
-                    <a href="#" class="linkLogo">
+                    <a href="#">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
@@ -49,7 +49,7 @@
         </nav>
     </header>
     <main class="mainHeader backgroundLight container grid">                              <!-- Page Elements -->
-        <h2 class="text-center h1">Elements reference</h2>                 <!-- Titre de la page -->
+        <h2 class="text-center h1">ELEMENTS REFERENCE</h2>                 <!-- Titre de la page -->
         <section>
             <h2 class="h2">COLORS</h2>                             <!-- COULEURS -->
             <div class="color-block color-1">#18BFEF</div>
@@ -75,17 +75,17 @@
             </div>
             <hr />                                          <!-- ENTÊTE AVEC SOUS-TITRE -->
             <h2 class="h2">HEADING WITH A SUBTITLE</h2>
-            <div class="sub-title">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
+            <div class="sub-title1">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
             <p>
                 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
             </p>
             <h3 class="h3">HEADING WITH A SUBTITLE</h3>
-            <div class="sub-title">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
+            <div class="sub-title2">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
             <p>
                 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
             </p>
             <h4 class="h4">HEADING WITH A SUBTITLE</h4>
-            <div class="sub-title">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
+            <div class="sub-title3">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</div> 
             <p>
                 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
             </p>  
@@ -120,55 +120,55 @@
             </div>
             <div>
                 <h3 class="h3">ICONS</h3>
-                <ul class="dInline">
-                    <li>
+                <ul class="menuList">
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-twitter iconsLight"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-facebook-f iconsLight"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-instagram iconsLight"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-github iconsLight"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-dribbble iconsLight"></i>
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
+                <ul >
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-twitter iconsBorder"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-facebook-f iconsBorder"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-instagram iconsBorder"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-github iconsBorder"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="dInline">
                         <a href="#">
                             <i class="fab fa-dribbble iconsBorder"></i>
                     </a>
@@ -400,7 +400,7 @@
             </div>
             <hr />
             <h2>PREFORMATTED</h2>                                   <!-- PRÉFORMATÉ -->
-            <pre class="backgroundMedium">
+            <pre >
                 i = 0;
 
                 while (!deck.isInOrder()) {

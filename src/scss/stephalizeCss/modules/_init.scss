@@ -1,4 +1,4 @@
-
+// --------- CONTAINER ----------------------
 $screen-sizes: (
     'xs':   ('breakpoint': 0,       'container-size': 90%),
     's':    ('breakpoint': 576px,   'container-size': 540px),
@@ -8,6 +8,8 @@ $screen-sizes: (
     'xxl':  ('breakpoint': 1400px,  'container-size': 1320px)
 );
 
+
+// ---------- GRID --------------------------
 $gridValues: (
     ('', 0, auto),
     ('-sm', 576px, 540px),
@@ -17,9 +19,12 @@ $gridValues: (
     ('-xxl', 1400px, 1320px)
 );
 
-$border-radius-default: 5px;
 
+// ------------- BORDER ---------------------
+$border-radius-default: 5px;
 $border-radius-specify: 100%;
+
+
 
 * {
     box-sizing: border-box;

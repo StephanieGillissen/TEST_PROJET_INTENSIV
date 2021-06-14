@@ -11,61 +11,30 @@
 
 // ---------------- HELPERS ------------------
 
-.backgroundLight {
-    background: $color-neutral-1;
-}
-.backgroundMedium {
-    background: $color-neutral-2;
-}
-.backgroundDark {
+body {
     background: radial-gradient(at top, $color-2, $color-text);
 }
 .backgroundMenu {
     background: radial-gradient(at top, $color-2, $color-neutral-3);
 }
 .isActive {
-    background: $color-neutral-1;
     color: $color-text;
+    background: $color-neutral-1;
 }
 .dInline {
     display: inline-block;
 }
+.backgroundLight {
+    background: $color-neutral-1;
+}
+.backgroundMedium {
+    background: $color-neutral-2;
+}
+
 
 
 // ------------ HEADER ----------------------
-    // _____________ MENU HAMBURGER _____________
-
-        #hamburgerLabel {
-            display: block;
-            font-size: 4rem;
-            &::before {
-                content: '\f0c9';
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-            }
-            &:hover {
-                cursor: pointer;
-            }
-            @media screen and (min-width: 768px) {
-                display: none;
-            }
-            
-        }
-        #hamburgerCheckbox {
-            display: none;
-            &:checked {
-                ~ nav {
-                    display: block;
-                }
-                + #hamburgerLabel::before {
-                    content: '\f00d';
-                }
-            }
-        }
-
-
-    // _____________ HEADER _____________
-
+    
         .siteHeader {
             padding-top: 2rem;
             
@@ -82,25 +51,60 @@
                 @media screen and (min-width: 768px) {
                     display: block;
                 }
-                .listItem {
-                    @media screen and (min-width: 768px) {
-                    display: inline-block;   
-                    }
-                    .itemLink {
-                        display: block;
-                        padding: 2rem;
+                .menuList {
+                    list-style: none;
+                    display: inline-block;
+                    a {
+                        color: $color-neutral-1;
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }        
+                }
+                    .listItem {
+                        @media screen and (min-width: 768px) {
+                        display: inline-block;
+                        list-style: none;   
                         }
                     }
                 }
             }
 
-            
+    // _____________ MENU HAMBURGER _____________
+
+    #hamburgerLabel {
+        display: block;
+        font-size: 4rem;
+        &::before {
+            content: '\f0c9';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        
+    }
+    #hamburgerCheckbox {
+        display: none;
+        &:checked {
+            ~ nav {
+                display: block;
+            }
+            + #hamburgerLabel::before {
+                content: '\f00d';
+            }
+        }
+    }
 
 
 // ----------------- MAIN HEADER ---------------------
 
     .mainHeader {
-        padding: 2em;
+        padding: 7em;
     }
 
 // ----------------- MAIN CONTENT ---------------------

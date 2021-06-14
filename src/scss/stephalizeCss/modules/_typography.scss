@@ -93,6 +93,10 @@
     // ___________ BUTTON __________________________
 
         $hover-color: $color-1;
+    
+    // _______________PERFORMATTED_________________
+
+
 
 // ---------- DEFAULT SPECIFICATIONS ---------------------
 
@@ -103,13 +107,13 @@
         line-height: $line-height-default;
         color: $font-color-default;
     }
+       
 
-    // LISTS__________________
-    
     // LINKS__________________
     a {
         color: $link-color;
         text-decoration: $link-decoration;
+        padding: .5rem;
         &:hover {
             color: $link-hover-color;
             text-decoration: $link-hover-decoration;
@@ -134,14 +138,6 @@
     }
 
     // ICONS_______________________
-    li {
-        list-style: none;
-        display: inline-block;
-
-        a:hover {
-                color: $hover-color;
-            }        
-    }
     .iconsBorder {
         margin-left: 5px;
         width: 30px;
@@ -152,6 +148,7 @@
         border-radius: $icons-border-radius;
         &:hover {
             border: $hover-color 2px solid;
+            color: $hover-color;
         }
     }
     .iconsLight {
@@ -164,6 +161,14 @@
     
 
     // BLOCKQUOTE__________________
+
+    // PERFORMATTED________________
+    pre {
+        color: $code-color;
+        background: $code-background;
+        padding: $code-padding;
+        border: $code-border;
+    }
    
     // HEADERS_______________________
     h1, .h1 {
@@ -220,8 +225,19 @@
         margin: $margin-h6;
         letter-spacing: $letter-spacing-h6;
     }
-    
-    
+    .sub-title1 {
+        font-style: italic;
+        font-size: $font-size-h3;
+    }
+    .sub-title2 {
+        font-style: italic;
+        font-size: $font-size-h4;
+    }
+    .sub-title3 {
+        font-style: italic;
+        font-size: $font-size-h5;
+    }
+
     // FOOTER_____________________
     footer {
         font-family: $font-2;
