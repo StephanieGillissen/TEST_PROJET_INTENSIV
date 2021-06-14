@@ -7,12 +7,12 @@
     <title>Test Projet Intensiv' - Elements</title>
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
-<body class="container grid">
-    <header class="siteHeader text-center"><!-- Titre principale -->
-        <h1 class="title1 text-center">INTENSIV'</h1>
+<body class="container">
+    <header class="siteHeader text-center">                     <!-- Titre principale -->
+        <h1 class="title1 text-center"><span>INTENSIV'</span></h1>
         <input type="checkbox" id="hamburgerCheckbox" />
         <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
-        <nav class="backgroundMenu mainNav"><!-- Menu de navigation et réseaux sociaux -->
+        <nav class="backgroundMenu mainNav container grid">          <!-- Menu de navigation et réseaux sociaux -->
             <ul class="menuList">
                 <li class="listItem">
                     <a href="index.html" class="itemLink">THIS IS INTENSIV'</a>
@@ -48,10 +48,10 @@
             </ul>
         </nav>
     </header>
-    <main class="mainHeader backgroundLight container grid">                              <!-- Page Elements -->
-        <h2 class="text-center h1">ELEMENTS REFERENCE</h2>                 <!-- Titre de la page -->
+    <main class="mainHeader backgroundLight container grid">      <!-- Page Elements -->
+        <h2 class="text-center h1">ELEMENTS <br />REFERENCE</h2> <!-- Titre de la page -->
         <section>
-            <h2 class="h2">COLORS</h2>                             <!-- COULEURS -->
+            <h2 class="h2">COLORS</h2>                              <!-- COULEURS -->
             <div class="color-block color-1">#18BFEF</div>
             <div class="color-block color-neutral-2">#F6F6F6</div>
             <div class="color-block color-neutral-3">#717981</div>
@@ -412,7 +412,7 @@
                 print 'It took ' + i + ' iterations to sort the deck.';
             </pre>
         </section>
-        <footer class="backgroundMedium">                                                     <!-- CONTACT -->
+        <footer class="backgroundMedium">                            <!-- CONTACT -->
             <form action="traitement.html" method="get" enctype="multipart/form-data">
                 <div>
                     <label for="name">NAME</label>

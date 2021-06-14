@@ -22,6 +22,7 @@ body {
     color: $color-text;
     background: $color-neutral-1;
     text-decoration: none;
+    padding: 23px 20px 24px;
     &:hover {
         color: $hover-color;
     }
@@ -46,10 +47,13 @@ body {
             .title1 {
                 font-family: $font-2;
                 color: $color-neutral-1;
-                border: $color-neutral-1 5px solid;
+                margin: 2em;
                 padding: 5px;
-                width: 200px;
-                text-indent: 10px;
+                width: auto;
+                span {
+                    border: $color-neutral-1 5px solid;
+                    padding: 10px 30px;
+                }
             }
             .mainNav {
                 display: none;
@@ -60,6 +64,7 @@ body {
                     list-style: none;
                     display: inline-block;
                     font-family: $font-2;
+                    margin: 0;
                     .itemLink {
                         color: $color-neutral-1;
                         text-decoration: none;
