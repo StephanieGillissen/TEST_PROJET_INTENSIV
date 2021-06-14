@@ -86,7 +86,10 @@ body {
 
     #hamburgerLabel {
         display: block;
-        font-size: 4rem;
+        font-family: $font-2;
+        font-size: $font-size-default;
+        color: $color-neutral-1;
+        float: right;
         &::before {
             content: '\f0c9';
             font-family: 'Font Awesome 5 Free';
