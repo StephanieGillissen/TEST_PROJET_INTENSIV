@@ -70,7 +70,7 @@
         $code-color: $color-neutral-3;
         $code-background: $color-neutral-2;
         $code-padding: .3em;
-        $code-border: $color-neutral-3 1px solid;
+        $code-border: lighten($color-neutral-3, 45%) 2px solid;
         $code-border-radius: $border-radius-default;
 
     // ______________ HR _______________________
@@ -82,7 +82,7 @@
     
     // ___________ ICONS ___________________
 
-        $icons-border: $color-neutral-3 1px solid;
+        $icons-border: lighten($color-neutral-3, 40%) 2px solid;
         $icons-border-radius: $border-radius-specify;
         $icons-background: $color-neutral-2;
 
@@ -104,6 +104,8 @@
         color: $font-color-default;
     }
 
+    // LISTS__________________
+    
     // LINKS__________________
     a {
         color: $link-color;
@@ -129,11 +131,9 @@
         background: $code-background;
         padding: $code-padding;
         border: $code-border;
-        border-bottom: $code-border-radius;
     }
 
     // ICONS_______________________
-    
     li {
         list-style: none;
         display: inline-block;
@@ -144,14 +144,24 @@
     }
     .iconsBorder {
         margin-left: 5px;
-        padding: 4px 8px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 6px;
         border: $icons-border;
         border-radius: $icons-border-radius;
         &:hover {
-            color: $hover-color;
-            border: $hover-color;
+            border: $hover-color 2px solid;
         }
     }
+    .iconsLight {
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 4px;
+    }
+    
 
     // BLOCKQUOTE__________________
    
