@@ -18,8 +18,12 @@ body {
     background: radial-gradient(at top, $color-2, $color-neutral-3);
 }
 .isActive {
+    font-family: $font-2;
     color: $color-text;
     background: $color-neutral-1;
+    &:hover {
+        color: $hover-color;
+    }
 }
 .dInline {
     display: inline-block;
@@ -54,7 +58,8 @@ body {
                 .menuList {
                     list-style: none;
                     display: inline-block;
-                    a {
+                    font-family: $font-2;
+                    .itemLink {
                         color: $color-neutral-1;
                         &:hover {
                             color: $hover-color;
