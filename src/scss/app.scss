@@ -22,10 +22,7 @@ body {
     color: $color-text;
     background: $color-neutral-1;
     text-decoration: none;
-    padding: 23px 20px 24px;
-    &:hover {
-        color: $hover-color;
-    }
+    padding: 32px 20px;
 }
 .dInline {
     display: inline-block;
@@ -58,18 +55,20 @@ body {
             .mainNav {
                 display: none;
                 @media screen and (min-width: 768px) {
-                    display: block;
+                    display: flex;
                 }
                 .menuList {
                     list-style: none;
-                    display: inline-block;
+                    display: inline-block;                  
                     font-family: $font-2;
                     margin: 0;
                     .itemLink {
+                        display: inline-block;
                         color: $color-neutral-1;
                         text-decoration: none;
                         &:hover {
-                            color: $hover-color;
+                            color: $color-neutral-1;
+                            background: rgb(113,121,129,0.6);                           
                         }
                     }        
                 }
@@ -119,16 +118,48 @@ body {
 // ----------------- MAIN HEADER ---------------------
 
     .mainHeader {
-        padding: 7em;
+        padding: 3em;
+    }
+    .titleMain {
+        margin: 1.5em;
     }
 
 // ----------------- MAIN CONTENT ---------------------
 
+    .listItem-2 {
+        list-style: none;
+        p {
+            margin-left: 3em;
+        }
+    }
     
 
+    
 // ----------------- MAIN FOOTER ---------------------
 
-
+    .mainFooter {
+        background: $color-neutral-2;
+        padding: 30px;
+    }
+    form {
+        border-right: lighten($color-neutral-3, 40%) 3px solid;
+    }
+    address {
+        ul {
+            padding: 0;
+            
+        }
+    }
+    .contactItem {
+        margin: 20px 0;
+        padding: 0;
+        border-bottom: lighten($color-neutral-3, 40%) 3px solid;
+        .contactLink {
+            padding-left: 20px;
+            color: lighten($color-neutral-3, 20%);
+            font-family: $font-1;
+        }
+    }
 
 // ----------------- FOOTER ---------------------
 

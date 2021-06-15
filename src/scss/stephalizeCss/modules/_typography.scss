@@ -90,15 +90,24 @@
         $icons-border-radius: $border-radius-specify;
         $icons-background: $color-neutral-2;
 
-    
+    // ___________ DEFINITION __________________
+
+
+
     // ___________ BLOCKQUOTE ___________________
 
         $line-height-blockquote: 2.5;
 
-    // ___________ BUTTON __________________________
+    // _________________ BUTTON ___________________
 
         $hover-color: $color-1;
     
+    // __________________ BOX _____________________
+
+        $line-height-specify: 2.5;
+        $box-padding: 25px;
+    
+        
     // _______________PERFORMATTED_________________
 
 
@@ -123,7 +132,6 @@
             color: $link-hover-color;
             text-decoration: $link-hover-decoration;
         }
-
     }
 
     // HR______________________
@@ -142,62 +150,6 @@
         border: $code-border;
     }
 
-
-    // LISTS______________________
-    ul, ol {
-        padding: 20px;
-        
-    }
-    li {
-        padding-left: .5rem;
-    }
-
-
-
-
-    // ICONS_______________________
-    .iconsBorder {
-        padding: 0;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        padding-top: 6px;
-        border: $icons-border;
-        border-radius: $icons-border-radius;
-        &:hover {
-            border: $hover-color 2px solid;
-            color: $hover-color;
-        }
-    }
-    .iconsLight {
-        padding: 0;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        padding-top: 4px;
-        &:hover {
-            color: $hover-color;
-        }
-    }
-    
-
-    // BLOCKQUOTE__________________
-    blockquote {
-        font-style: $font-italic;
-        border-left: lighten($color-neutral-3, 40%) 4px solid;
-        margin: 18px 0;
-        padding-left: 40px;
-        line-height: $line-height-blockquote;
-    }
-
-    // PERFORMATTED________________
-    pre {
-        color: $code-color;
-        background: $code-background;
-        padding: $code-padding;
-        border: $code-border;
-    }
-   
     // HEADERS_______________________
     h1, .h1 {
         font-family: $font-2;
@@ -268,6 +220,89 @@
         font-size: $font-size-h5;
     }
 
+    // LISTS______________________
+    ul, ol {
+        padding: 20px;
+        
+    }
+    li {
+        padding-left: .5rem;
+    }
+
+    // ICONS_______________________
+    .iconsBorder {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 4px 0 ;
+        border: $icons-border;
+        border-radius: $icons-border-radius;
+        &:hover {
+            border: $hover-color 2px solid;
+            color: $hover-color;
+        }
+    }
+    .iconsBorderNone {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 4px 0;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    .iconsLight {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 4px;
+        color: $color-neutral-1;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    
+    // DEFINITION__________________
+    dfn {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    // BUTTON______________________
+
+
+    
+    // BLOCKQUOTE__________________
+    blockquote {
+        font-style: $font-italic;
+        border-left: lighten($color-neutral-3, 40%) 4px solid;
+        margin: 18px 0;
+        padding-left: 40px;
+        line-height: $line-height-blockquote;
+    }
+
+    // TABLE_______________________
+
+
+
+    // BOX_________________________
+    .box {
+        border: $code-border;
+        padding: $box-padding;
+        line-height: $line-height-specify;
+    }
+
+
+    
+
+    // PERFORMATTED________________
+    pre {
+        color: $code-color;
+        background: $code-background;
+        padding: $code-padding;
+        border: $code-border;
+    }
+   
     // FOOTER_____________________
     footer {
         font-family: $font-2;
