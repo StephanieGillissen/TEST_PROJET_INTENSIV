@@ -194,23 +194,23 @@
             </ul>
             <h3>ACTIONS</h3>
             <div>
-                <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
+                <input type="button" value="PRIMARY" class="buttonBlack" /> <input type="button" value="DEFAULT" class="buttonWhite" />
             </div>
             <div>
-                <input type="button" value="SMALL" /> <input type="button" value="SMALL" />
+                <input type="button" value="SMALL" class="buttonBlack" /> <input type="button" value="SMALL" class="buttonWhite" />
             </div>
             <div>
-                <input type="button" value="DEFAULT" />
-                <input type="button" value="DEFAULT" />
+                <input type="button" value="DEFAULT" class="buttonBlack" />
+                <input type="button" value="DEFAULT" class="buttonWhite" />
             </div>
             <div>
-                <input type="button" value="SMALL" />
-                <input type="button" value="SMALL" />
+                <input type="button" value="SMALL" class="buttonBlack" />
+                <input type="button" value="SMALL" class="buttonWhite" />
             </div>
-            <input type="button" value="DEFAULT" />
-            <input type="button" value="DEFAULT" />
-            <input type="button" value="SMALL" />
-            <input type="button" value="SMALL" />
+            <input type="button" value="DEFAULT" class="buttonBlack" />
+            <input type="button" value="DEFAULT" class="buttonWhite" />
+            <input type="button" value="SMALL" class="buttonBlack" />
+            <input type="button" value="SMALL" class="buttonWhite" />
             <hr />
             <h2>BLOCKQUOTE</h2>                                   <!-- CITATION EN BLOC -->
             <blockquote>
@@ -320,40 +320,42 @@
             <input type="button" value="PRIMARY" /> <input type="button" value="DEFAULT" />
             <hr />
             <h2>FORM</h2>                                        <!-- FORMULAIRE -->
-            <form action="traitement.html" method="get" enctype="multipart/form-data">
-                <div>
-                    <input type="text" name="name" placeholder="Name" />
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Email" />
-                </div>
-                <div>
-                    <select name="category" id="category">
-                        <option disabled="disabled" selected="selected">- Category -</option>
-                        <option value="c1">category 1</option>
-                        <option value="c2">category 2</option>
-                        <option value="c3">category 3</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="radio" name="speed" value="l" checked="checked" />Low
-                    <input type="radio" name="speed" value="n" />Normal
-                    <input type="radio" name="speed" value="h" />High
-                </div>
-                <div>
-                    <input type="checkbox" name="copy" id="copy">
-                    <label for="copy" >Email me a copy</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="captcha" id="captcha" checked="checked">
-                    <label for="captcha" >I am a human</label>    
-                </div>
-                <div>
-                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                </div>
-                <input type="submit" value="SEND MESSAGE" />
-                <input type="reset" value="RESET" />
-            </form>
+            <div class="grid">
+                <form action="traitement.html" method="get" enctype="multipart/form-data">
+                    <div class="col-lg-6">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <div>
+                        <select name="category" id="category">
+                            <option disabled="disabled" selected="selected">- Category -</option>
+                            <option value="c1">category 1</option>
+                            <option value="c2">category 2</option>
+                            <option value="c3">category 3</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="speed" value="l" checked="checked" />Low
+                        <input type="radio" name="speed" value="n" />Normal
+                        <input type="radio" name="speed" value="h" />High
+                    </div>
+                    <div class="copy col-lg-6">
+                        <input type="checkbox" name="copy" id="copy">
+                        <label for="copy" >Email me a copy</label>
+                    </div>
+                    <div class="captcha col-lg-6">
+                        <input type="checkbox" name="captcha" id="captcha" checked="checked">
+                        <label for="captcha" >I am a human</label>    
+                    </div>
+                    <div>
+                        <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <input type="submit" value="SEND MESSAGE" class="col-lg-2"/>
+                    <input type="reset" value="RESET" class="col-lg-1"/>
+                </form>
+            </div>
             <hr />
             <h2>IMAGES</h2>                                     <!-- IMAGES -->
             <h3>FIT</h3>
@@ -417,35 +419,35 @@
     </main>
     <footer>                            <!-- CONTACT -->
         <div class="mainFooter grid">
-            <form action="traitement.html" method="get" enctype="multipart/form-data" class="col-lg-6">
-                <div>
+            <form action="traitement.html" method="get" enctype="multipart/form-data" class="contactForm col-lg-6">
+                <div class="div1">
                     <label for="name">NAME</label>
                     <input type="text" name="name" id="name" />
                 </div>
-                <div>
+                <div class="div2">
                     <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email" />
                 </div>
-                <div>
-                    <label for="message">MESSAGE</label>
+                <div class="div3">
+                    <label for="message">MESSAGE</label><br />
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <input type="submit" value="SEND MESSAGE" />
             </form>
             <address class="col-lg-6">
                 <ul>
-                    <li class="contactItem">ADDRESS <p class="contactLink">9 Rue Carles Deliège 4247 <br>
-                                    Fléron, TN 00000-0000</p></li>
-                    <li class="contactItem">PHONE <a href="tel:0000000000"  class="contactLink">(000) 000 - 0000</a></li>
-                    <li class="contactItem">EMAIL <a href="mailto:info@untitled.tld"  class="contactLink">info@untitled.tld</a></li>
-                    <li>SOCIAL
+                    <li class="contactItem border-bottom">ADDRESS <p class="contactLink">9 Rue Carles Deliège 4247<br /> Fléron, TN 00000-0000</p></li>
+                    
+                    <li class="contactItem border-bottom">PHONE <a href="tel:0000000000"  class="contactLink">(000) 000 - 0000</a></li>
+                    <li class="contactItem border-bottom">EMAIL <a href="mailto:info@untitled.tld"  class="contactLink">info@untitled.tld</a></li>
+                    <li class="contactItem">SOCIAL
                         <ul class="dInline">
                             <li class="dInline">
                                 <a href="#">
                                     <i class="fab fa-twitter iconsBorder"></i>
                                 </a>
                             </li>
-                            <li class="dInline ">
+                            <li class="dInline">
                                 <a href="#">
                                     <i class="fab fa-facebook-f iconsBorder"></i>
                                 </a>
